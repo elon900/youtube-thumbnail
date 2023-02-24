@@ -74,23 +74,8 @@ async function download(v){
 		url = 'https://img.youtube.com/vi/'+id+'/maxresdefault.jpg';
 	}else{
 		url = "https://webtoolastra.com";
-	}
-	 console.log(hdimg.getAttribute("src"));
-	/* fetch(url, {
-		mode: 'no-cors'
-	})
-	.then((response) => response.blob())
-	.then((blob)=> {
-	  // do something with the image blob
-	  const imageUrl = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-          a.style.display = 'none';
-            a.href = imageUrl;
-            a.download = 'youtube-thumbnail.jpg';
-	a.click();
-	}); 
-	/* console.log(hdimg.getAttribute("src"));
-	fetch(mah)
+	} 
+	fetch(url)
         .then(res => res.blob())
         .then(blob => {
             const imageUrl = window.URL.createObjectURL(blob);
@@ -99,7 +84,7 @@ async function download(v){
             a.href = imageUrl;
             a.download = 'youtube-thumbnail.jpg';
 	a.click(); 
-        }); */
+        }); 
 
    }
 
